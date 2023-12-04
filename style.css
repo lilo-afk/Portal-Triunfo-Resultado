@@ -215,15 +215,10 @@ main {
     height: 250px;
     margin-bottom: 16px;
   }
-
-  #l-mobile-result {
-    display: none;
-  }
 }
 
 /* Large image */
 @media (min-width: 445px) and (max-width: 480px) {
-  #s-mobile-result,
   #m-mobile-result {
     display: none;
   }
