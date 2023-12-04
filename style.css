@@ -215,19 +215,9 @@ main {
     height: 250px;
     margin-bottom: 16px;
   }
-}
-
-/* Large image */
-@media (min-width: 445px) and (max-width: 480px) {
-  #m-mobile-result {
-    display: none;
-  }
 
   #l-mobile-result {
-    display: block;
-    width: 100%;
-    height: 250px;
-    margin-bottom: 16px;
+    display: none;
   }
 }
 
