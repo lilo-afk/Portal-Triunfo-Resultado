@@ -189,7 +189,7 @@ main {
 /* Media queries */
 
 /* Small image */
-@media (max-width: 374px) {
+@media (min-width: 280px) and (max-width: 374px) {
   #s-mobile-result {
     display: block;
     width: 100%;
