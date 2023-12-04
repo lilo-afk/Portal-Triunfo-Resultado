@@ -189,7 +189,6 @@ main {
 /* Media queries */
 
 /* Small image */
-
 @media (max-width: 374px) {
   #s-mobile-result {
     display: block;
@@ -197,26 +196,34 @@ main {
     height: 250px;
     margin-bottom: 16px;
   }
+
+  #m-mobile-result,
+  #l-mobile-result {
+    display: none;
+  }
 }
 
 /* Medium image */
-
 @media (min-width: 375px) and (max-width: 444px) {
   #s-mobile-result {
     display: none;
   }
+
   #m-mobile-result {
     display: block;
     width: 100%;
     height: 250px;
     margin-bottom: 16px;
   }
-}
 
-@media (min-width: 445px) and (max-width: 480px) {
-  #s-mobile-result {
+  #l-mobile-result {
     display: none;
   }
+}
+
+/* Large image */
+@media (min-width: 445px) and (max-width: 480px) {
+  #s-mobile-result,
   #m-mobile-result {
     display: none;
   }

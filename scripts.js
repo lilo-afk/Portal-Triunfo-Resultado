@@ -35,7 +35,11 @@ function updateShareButtons() {
     pageUrl +
     "&summary=" +
     shareText;
-  redditBtn.href = "https://www.reddit.com/submit?url=" + shareText;
+  redditBtn.href =
+    "https://www.reddit.com/submit?url=" +
+    +"&title=" +
+    encodeURIComponent(getFullCourseName()) +
+    shareText;
 }
 
 // Chama a função para atualizar o conteúdo e os botões de compartilhamento
