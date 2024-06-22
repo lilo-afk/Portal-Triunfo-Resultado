@@ -47,8 +47,8 @@ main {
   display: flex;
   flex-direction: column;
 
-  border-radius: 16px;
   padding: 2rem 1.5rem;
+  border-radius: 12px;
 
   width: 550px;
 
@@ -63,7 +63,7 @@ main {
   width: 100%;
   height: auto;
   margin-top: 24px;
-  border-radius: 16px;
+  border-radius: 6px;
 }
 
 .mobile-result {
@@ -78,6 +78,7 @@ main {
 .description-header {
   font-size: 1rem;
   font-weight: 400;
+  text-align: justify;
 
   margin-top: 1rem;
 }
@@ -87,7 +88,7 @@ main {
   height: 250px;
 
   margin-top: 24px;
-  border-radius: 16px;
+  border-radius: 6px;
 }
 
 .title-box {
@@ -157,11 +158,11 @@ main {
   background-color: var(--green-hover-color);
 }
 .twitter {
-  background-color: var(--blue-color);
+  background-color: var(--black-color);
   transition: all ease 0.2s;
 }
 .twitter:hover {
-  background-color: var(--blue--hover-color);
+  background-color: var(--black-color);
 }
 .facebook {
   background-color: var(--dark-blue-color);
