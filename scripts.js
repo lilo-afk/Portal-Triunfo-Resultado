@@ -29,13 +29,21 @@ function updateShareButtons() {
   // Atualiza os links dos botões de compartilhamento
   whatsappBtn.href = "https://api.whatsapp.com/send?phone=&text=" + shareText;
   twitterBtn.href = "https://twitter.com/intent/tweet?text=" + shareText;
-  facebookBtn.href = "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
+  facebookBtn.href =
+    "https://www.facebook.com/sharer/sharer.php?u=" +
+    encodeURIComponent(pageUrl) +
+    "&quote=" +
+    encodeURIComponent(shareText);
   linkedinBtn.href =
     "https://www.linkedin.com/sharing/share-offsite/?url=" +
     pageUrl +
     "&summary=" +
     shareText;
-  redditBtn.href = "https://www.reddit.com/submit?url=" + shareText + pageUrl;
+  redditBtn.href =
+    "https://www.reddit.com/submit?url=" +
+    encodeURIComponent(pageUrl) +
+    "&title=" +
+    encodeURIComponent(shareText);
 }
 
 // Chama a função para atualizar o conteúdo e os botões de compartilhamento
