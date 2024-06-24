@@ -43,7 +43,7 @@ function updateShareButtons() {
     "https://www.reddit.com/submit?url=" +
     encodeURIComponent(pageUrl) +
     "&title=" +
-    encodeURIComponent(shareText);
+    shareText;
 }
 
 // Chama a função para atualizar o conteúdo e os botões de compartilhamento
