@@ -24,7 +24,7 @@ function updateShareButtons() {
     "Meu perfil de curso é " +
     getFullCourseName() +
     ". E o seu? Jogue também o game Portal do Triunfo! " +
-    encodeURIComponent(pageUrl);
+    "https://www.fateccarapicuiba.edu.br/estude/";
 
   // Atualiza os links dos botões de compartilhamento
   whatsappBtn.href = "https://api.whatsapp.com/send?phone=&text=" + shareText;
