@@ -24,7 +24,7 @@ function updateShareButtons() {
   var shareText =
     "Meu perfil de curso é " +
     getFullCourseName() +
-    ". E o seu? Acesse a página a nossa página em: https://www.fateccarapicuiba.edu.br/estude/ e  Jogue o game Portal do Triunfo! " +
+    ". E o seu? Acesse a nossa página em: https://www.fateccarapicuiba.edu.br/estude/ e  Jogue o game Portal do Triunfo! " +
     encodeURIComponent(pageUrl);
 
   // Atualiza os links dos botões de compartilhamento
