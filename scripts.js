@@ -18,13 +18,14 @@ function updateShareButtons() {
 
   // Obtém a URL da página
   var pageUrl = window.location.href;
+  // var shortUrl = "https://www.fateccarapicuiba.edu.br/estude/";
 
   // Cria o texto do compartilhamento com o resultado e a URL
   var shareText =
     "Meu perfil de curso é " +
     getFullCourseName() +
-    ". E o seu? Jogue também o game Portal do Triunfo! " +
-    "https://www.fateccarapicuiba.edu.br/estude/";
+    ". E o seu? Acesse a página a nossa página em: https://www.fateccarapicuiba.edu.br/estude/ e  Jogue o game Portal do Triunfo! " +
+    encodeURIComponent(pageUrl);
 
   // Atualiza os links dos botões de compartilhamento
   whatsappBtn.href = "https://api.whatsapp.com/send?phone=&text=" + shareText;
